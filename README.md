@@ -1,2 +1,1 @@
-# mf-docs
-MetaPhage documentation draft
+MetaPhage documentation
