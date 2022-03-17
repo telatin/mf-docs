@@ -20,6 +20,7 @@ group :jekyll_plugins do
   gem "github-pages"
   gem 'jekyll-commonmark-ghpages'
   gem "jekyll-remote-theme"
+  gem "jekyll-mermaid"
   gem 'faraday', '< 1'
   gem 'liquid', '>= 4.0.1'
 end
