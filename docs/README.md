@@ -1,10 +1,5 @@
 # MetaPhage
 
-[MetaPhage Logo]({{ site.baseurl }}{% link imgs/metaphage-logo.png %})
+![MetaPhage Logo]({{ site.baseurl }}{% link imgs/metaphage-logo.png %})
 
-
-
-
-## What is it
-
-A reads to report workflow for metavirome analysis
+A reads-to-report pipeline to analyse metaviromics datasets
