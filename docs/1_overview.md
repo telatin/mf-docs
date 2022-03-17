@@ -9,15 +9,15 @@ permalink: /overview
 
 A reads to report workflow for metavirome analysis:
 
-* Raw reads cleanup and profiling with Kraken
-* Assembly with SPAdes or Megahit (overview with MetaQuast)
+* Raw reads cleanup and profiling with [Kraken2](https://ccb.jhu.edu/software/kraken2/)
+* Assembly with [SPAdes](https://github.com/ablab/spades#readme) or [Megahit](https://github.com/voutcn/megahit#readme) (overview with [MetaQuast](http://quast.sourceforge.net/metaquast))
 * Phage mining with:
-  * VirFinder
-  * VirSorter
-  * Phigaro
-  * Vibrant
-* Consensus (cd-hit) and backmapping (bowtie2), and quantification (bamtocov)
-* Genefinding and viral taxonomy (vContact2)
+  * [VirFinder](https://github.com/jessieren/VirFinder#readme)
+  * [VirSorter](https://github.com/simroux/VirSorter#readme)
+  * [Phigaro](https://github.com/bobeobibo/phigaro#readme)
+  * [Vibrant](https://github.com/AnantharamanLab/VIBRANT#readme)
+* Consensus (cd-hit) and backmapping ([bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)), and quantification ([bamtocov](https://github.com/telatin/bamtocov))
+* Genefinding and viral taxonomy ([vContact2](https://bitbucket.org/MAVERICLab/vcontact2/wiki/Home))
 * Comprehensive report
 
 ## Workflow manager
