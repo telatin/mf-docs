@@ -69,31 +69,31 @@ Metadata arguments:
 
 ### Input files
 
-* **-i**, **--reads-dir** _DIRECTORY_: path to the input reads. 
-* **-m**, **--metadata-file** _FILE_: CSV file with the [metadata]({{ site.baseurl }}{% link notes/metadata.md %}). Will contain the columns used for diversity analyses.
+* **`-i`**, **`--reads-dir`** _DIRECTORY_: path to the input reads. 
+* **`-m`**, **`--metadata-file`** _FILE_: CSV file with the [metadata]({{ site.baseurl }}{% link notes/metadata.md %}). Will contain the columns used for diversity analyses.
 
 ### Other paths
-* **-d**, **--database-dir** _DIRECTORY_: path to the downloaded [databases]({{ site.baseurl }}{% link notes/databases.md %}). By default will select the `./db` subdirectory of the MetaPhage installation directory.
-* **-o**, **--output-dir** _DIRECTORY_: path to the output directory (default: `./MetaPhage`).
-* **-s**, **--save** _FILE_: configuration file created by the script (default: stdout)
-* **--tmp** _TEMPDIR_: Temporary directory [default: /tmp]
-* **--work** _WORKINGDIR_: Nextflow work directory [default: /tmp]
+* **`-d`**, **`--database-dir`** _DIRECTORY_: path to the downloaded [databases]({{ site.baseurl }}{% link notes/databases.md %}). By default will select the `./db` subdirectory of the MetaPhage installation directory.
+* **`-o`**, **`--output-dir`** _DIRECTORY_: path to the output directory (default: `./MetaPhage`).
+* **`-s`**, **`--save`** _FILE_: configuration file created by the script (default: stdout)
+* **`--tmp`** _TEMPDIR_: Temporary directory [default: /tmp]
+* **`--work`** _WORKINGDIR_: Nextflow work directory [default: /tmp]
 
 ### Metadata variables
 
 To produce plots and diversity analyses we can specify the variables (column headers in the metadata file). To perform a primary analysis, it is possible to simply specify the main variable that will 
 be used for all the plots:
 
-* **-v**, **--main-variable** _NAME_: metadata variable to be used in all the plots. By default will be _Treatment_ but an error will be thrown if no "Treatment" column is provided.
+* **`-v`**, **`--main-variable`** _NAME_: metadata variable to be used in all the plots. By default will be _Treatment_ but an error will be thrown if no "Treatment" column is provided.
 
 Other variables:
 
-* **-a**, **--alpha-div-1**, _ALPHA_DIV_1_: Variable for alpha diversity (otherwise -v)
-* **-A**, **--alpha-div-2**, _ALPHA_DIV_2_: Secondary variable for alpha diversity (otherwise -v)
-* **-b**, **--beta-div**, _BETA_DIV_:  Variable for alpha diversity (otherwise -v)
-* **-V**, **--violin**, _VIOLIN_: Variable for violin plots (otherwise -v)
-* **-S**, **--sum-viol-var**, _SUM_VIOL_VAR_: Variable for total violin plots (otherwise -v)
-* **-H**, **--heatmap**, _HEATMAP_: Variable for heatmap (otherwise -v)
+* **`-a`**, **`--alpha-div-1`**, _ALPHA_DIV_1_: Variable for alpha diversity (otherwise -v)
+* **`-A`**, **`--alpha-div-2`**, _ALPHA_DIV_2_: Secondary variable for alpha diversity (otherwise -v)
+* **`-b`**, **`--beta-div`**, _BETA_DIV_:  Variable for alpha diversity (otherwise -v)
+* **`-V`**, **`--violin`**, _VIOLIN_: Variable for violin plots (otherwise -v)
+* **`-S`**, **`--sum-viol-var`**, _SUM_VIOL_VAR_: Variable for total violin plots (otherwise -v)
+* **`-H`**, **`--heatmap`**, _HEATMAP_: Variable for heatmap (otherwise -v)
 
 
 ## Assumptions
@@ -111,7 +111,7 @@ also written in the configuration file.
 
 ## Example output
 
-```java
+```nextflow
 params {    
     config_profile_name = 'MetaPhage project'    
     config_profile_description = 'MetaPhage analysis configuration'
@@ -145,7 +145,7 @@ params {
 nextflow run main.nf -c project.conf [other options]
 ```
 
-The **project.conf** file is the output of _newProject.py_, and contains the
+The **project.conf`** file is the output of _newProject.py_, and contains the
 information required to locate the files and generate the plots.
 It is missing the information on how to run the pipeline (using a scheduler...)
 or where to locate the required programs.
@@ -157,3 +157,9 @@ image (for example for off-line execution) you can add `-with-singularity PATH_T
 
 Similarily, you can pre-download the Docker image and then add 
 `-with-docker andreatelatin/metaphage:1.0`.
+
+See also:
+
+* [MetaPhage and Docker]({{ site.baseurl }}{% link notes/docker.md %})
+* [MetaPhage and Singularity]({{ site.baseurl }}{% link imgs/singularity.md %})
+* [MetaPhage Configuration]({{ site.baseurl }}{% link notes/config.md %})

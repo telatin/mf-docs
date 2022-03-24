@@ -8,7 +8,7 @@
 
 * The **pipeline** includes viral mining and quantification of the vOTUs.
 
-{% mermaid %}
+<div class="mermaid">
 graph TD;
  style input fill:#ff9,stroke:#333,stroke-width:2px
  classDef miner fill:#f99,stroke:#333,stroke-width:2px
@@ -35,9 +35,10 @@ graph TD;
  BAMTOCOUNTS --> REPORT;
  FASTP --> REPORT;
  QUAST --> REPORT;
-{% endmermaid %}
+</div>
 
 * The **final report** includes interactive plots and links to the main results.
 
 ![MetaPhage Report]({{ site.baseurl }}{% link imgs/metaphage-panels-small.png %})
 
+<script src="{{ site.baseurl }}{% link imgs/mermaid.min.js %}"></script>
