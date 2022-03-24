@@ -2,6 +2,6 @@
 sort: 8
 ---
 
-# Notes
+# MetaPhage notes
 
 {% include list.liquid %}
