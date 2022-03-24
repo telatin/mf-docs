@@ -111,7 +111,8 @@ also written in the configuration file.
 
 ## Example output
 
-```javaparams {    
+```java
+params {    
     config_profile_name = 'MetaPhage project'    
     config_profile_description = 'MetaPhage analysis configuration'
 

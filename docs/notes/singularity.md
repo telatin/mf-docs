@@ -30,7 +30,7 @@ nextflow run MetaPhage/main.nf -c project.config -with-singularity $PATH_TO_SIMG
 
 A simpler way to specify the container is with a configuration file, for example:
 
-```java
+```nextflow
 singularity.enabled    = true
 process.container      = 'metaphage.simg'
 singularity.autoMounts = true

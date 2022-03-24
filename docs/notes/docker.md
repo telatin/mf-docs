@@ -20,7 +20,7 @@ the dependencies will be found in the MetaPhage docker image.
 
 A simpler way to specify the container is with a configuration file, for example:
 
-```java
+```nextflow
 docker.enabled     = true
 process.container  = 'andreatelatin/metaphage:1.0'
 ```
