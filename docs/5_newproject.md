@@ -161,5 +161,5 @@ Similarily, you can pre-download the Docker image and then add
 See also:
 
 * [MetaPhage and Docker]({{ site.baseurl }}{% link notes/docker.md %})
-* [MetaPhage and Singularity]({{ site.baseurl }}{% link imgs/singularity.md %})
+* [MetaPhage and Singularity]({{ site.baseurl }}{% link notes/singularity.md %})
 * [MetaPhage Configuration]({{ site.baseurl }}{% link notes/config.md %})
