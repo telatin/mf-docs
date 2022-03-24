@@ -1,6 +1,5 @@
 ---
-sort: 1
-permalink: /metadata
+sort: 2
 ---
 
 # Metadata file

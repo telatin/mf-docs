@@ -1,6 +1,5 @@
 ---
 sort: 1
-permalink: /databases
 ---
 
 # MetaPhage databases

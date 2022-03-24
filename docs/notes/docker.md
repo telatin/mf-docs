@@ -1,6 +1,5 @@
 ---
 sort: 3
-permalink: /docker
 ---
 
 # Docker

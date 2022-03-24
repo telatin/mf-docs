@@ -1,6 +1,5 @@
 ---
 sort: 4
-permalink: /singularity
 ---
 
 # Singularity
