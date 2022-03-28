@@ -1,4 +1,5 @@
-temporary repository
+temporary repository, to test the documentation for
+[MetaPhage](http://telatin.github.io/mf-docs)
 
 
 ```mermaid
