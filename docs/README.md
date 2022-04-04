@@ -31,10 +31,12 @@ graph TD;
  CD-HIT --> PRODIGAL;
  PRODIGAL --> vConTACT2;
  vConTACT2 --> GraphAnalyzer;
- GraphAnalyzer --> REPORT;
- BAMTOCOUNTS --> REPORT;
+ GraphAnalyzer --> "R Diversity Scripts";
+ BAMTOCOUNTS --> "R Diversity Scripts";
  FASTP --> REPORT;
  QUAST --> REPORT;
+ "R Diversity Scripts" --> REPORT; 
+ 
 </div>
 
 * The **final report** includes interactive plots and links to the main results.
